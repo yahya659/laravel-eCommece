@@ -59,4 +59,4 @@ Route::get('admin/index',function(){
     return "age admin";
 
 })->middleware('CheckRole:admin');
-//
+
