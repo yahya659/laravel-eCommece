@@ -1,4 +1,5 @@
 # Laravel E-Commerce
+![Homepage](public/img/ll.png)
 
 ## 📌 نظرة عامة
 مشروع **Laravel E‑Commerce** هو تطبيق متجر إلكتروني متكامل تم بناؤه باستخدام **Laravel** و **MySQL** وBlade Templates، مع خصائص مثل:
