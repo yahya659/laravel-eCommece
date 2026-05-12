@@ -45,8 +45,8 @@
                             </p>
                             <p><textarea required name="description" id="description" cols="30" rows="10"
                                     placeholder="description">
-                                                {{ old('description') }}
-                                            </textarea>
+                                                            {{ old('description') }}
+                                                        </textarea>
                             </p>
                             <span class="text-danger">
                                 @error('description')
@@ -54,13 +54,13 @@
                                 @enderror
                             </span>
                             </span>
-                                <input type="file"  value="{{ old('imagepath') }}" placeholder="photo" name="photo"
-                                    id="photo" class="from-control" >
-                                <span class="text-danger">
-                                    @error('photo')
-                                        {{ $message }}
-                                    @enderror
-                                </span>
+                            <input type="file" value="{{ old('imagepath') }}" placeholder="photo" name="photo" id="photo"
+                                class="from-control">
+                            <span class="text-danger">
+                                @error('photo')
+                                    {{ $message }}
+                                @enderror
+                            </span>
                             <p>
                                 <select class="text-danger" name="category_id" id="category_id">
                                     @foreach ($allcategry as $item)
@@ -68,8 +68,7 @@
                                     @endforeach
                                     </selecte>
                             </p>
-                            <p><input type="submit" value="Submit"></p>
-
+                            <p><input type="submit" value="اضافه"></p>
                         </form>
 
                     </div>
@@ -78,8 +77,8 @@
             </div>
         </div>
     </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <br />
+    <br />
+    <br />
+    <br />
 @endsection

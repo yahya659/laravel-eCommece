@@ -102,7 +102,7 @@
                              <li>
                                 @if (auth()->user()->email==='aal@gmail.com')
                                   <a href="/">
-                                    {{ Auth::user()->name='Admain' }}
+                                    {{ Auth::user()->name='admin' }}
                                 </a>
                                 @else
                                  <a href="/">

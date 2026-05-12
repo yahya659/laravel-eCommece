@@ -12,7 +12,8 @@
     <title>Online store</title>
 
     <!-- favicon -->
-    {{-- <link rel="shortcut icon" type="image/png" href="{{asset('assets/img/ooogo.jpg')}}"> --}}
+    {{--
+    <link rel="shortcut icon" type="image/png" href="{{asset('assets/img/ooogo.jpg')}}"> --}}
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -60,7 +61,7 @@
                         <!-- logo -->
                         <div class="site-logo">
                             <a href="/">
-                                {{-- <img src="{{asset('assets/img/logo.png')}}" alt="" > --}}
+                                {{-- <img src="{{asset('assets/img/logo.png')}}" alt=""> --}}
                                 {{-- <h1 style="color: wheat">E_Commece</h1> --}}
                             </a>
                         </div>
@@ -75,64 +76,63 @@
                                 <li><a href="{{ route('cat') }}">الااقسام</a></li>
                                 <li><a href="/about">من نحن</a></li>
                                 @auth
-                                @if (auth()->user()->email==='aal@gmail.com')
-                                <li><a href="/addproduct">اضافه منتج</a>
-                                <li><a href="/productTable">جدول المنتجات</a>
-                                @endif
+                                    @if (auth()->user()->email === 'aal@gmail.com')
+                                        <li><a href="/addproduct">اضافه منتج</a>
+                                        <li><a href="/productTable">جدول المنتجات</a>
+                                    @endif
 
                                 @endauth
                                 <li><a href="/Review">اراء العملاء</a>
 
-                                        @guest
-                            @if (Route::has('login'))
-                                <li>
-                                    <a href="{{ route('login') }}">تسجيل دخول</a>
-                                </li>
-                            @endif
+                                    @guest
+                                            @if (Route::has('login'))
+                                                <li>
+                                                    <a href="{{ route('login') }}">تسجيل دخول</a>
+                                                </li>
+                                            @endif
 
-                            @if (Route::has('register'))
-                                <li>
-                                    <a  href="{{ route('register') }}">مستخدم جديد</a>
-                                </li>
-                            @endif
-                        @else
-
-
-                            <li>
-                                @auth
-                                 @if (auth()->user()->email==='aal@gmail.com')
-                                 <a href="/">
-                                    {{ Auth::user()->name='Admin' }}
-                                </a>
-                                @else
-                                 <a href="/">
-                                    {{ Auth::user()->name }}
-                                </a>
+                                        @if (Route::has('register'))
+                                            <li>
+                                                <a href="{{ route('register') }}">مستخدم جديد</a>
+                                            </li>
+                                        @endif
+                                    @else
 
 
-                                @endif
-
-                                @endauth
-
-
-                                </li>
-
-                                <li>
-
-
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        تسجيل خروج
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
+                                    <li>
+                                        @auth
+                                            @if (auth()->user()->email === 'aal@gmail.com')
+                                                <a href="/">
+                                                    {{ Auth::user()->name = 'Admin' }}
+                                                </a>
+                                            @else
+                                                <a href="/">
+                                                    {{ Auth::user()->name }}
+                                                </a>
 
 
-                        @endguest
+                                            @endif
+
+                                        @endauth
+
+
+                                    </li>
+
+                                    <li>
+
+
+                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                            تسجيل خروج
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+
+
+                                @endguest
 
 
 
@@ -142,8 +142,7 @@
 
                                 <li>
                                     <div class="header-icons">
-                                        <a class="shopping-cart" href="/cart"><i
-                                                class="fas fa-shopping-cart"></i></a>
+                                        <a class="shopping-cart" href="/cart"><i class="fas fa-shopping-cart"></i></a>
                                         <a class="mobile-hide search-bar-icon" href="#"><i
                                                 class="fas fa-search"></i></a>
                                     </div>
@@ -171,8 +170,8 @@
                             <h3>البحث على جميع المنتجات الخاصه بنا :</h3>
                             <form action="/search" method="GET">
                                 @csrf
-                            <input type="text" name="name" placeholder="ابحث عن المنتجات" >
-                            <button type="submit">بحث <i class="fas fa-search"></i></button>
+                                <input type="text" name="name" placeholder="ابحث عن المنتجات">
+                                <button type="submit">بحث <i class="fas fa-search"></i></button>
                             </form>
                         </div>
                     </div>
@@ -195,7 +194,7 @@
                                 <h1>احدث صيحات الموضه</h1>
                                 <div class="hero-btns">
                                     @guest
-                                    <a href="{{ route('login') }}" class="boxed-btn">سجل معنا</a>
+                                        <a href="{{ route('login') }}" class="boxed-btn">سجل معنا</a>
 
                                     @endguest
 
@@ -218,7 +217,7 @@
                                 <h1>100% ماكولات طبيعيه</h1>
                                 <div class="hero-btns">
                                     @guest
-                                     <a href="{{ route('login') }}" class="boxed-btn">سجل معنا</a>
+                                        <a href="{{ route('login') }}" class="boxed-btn">سجل معنا</a>
 
                                     @endguest
 

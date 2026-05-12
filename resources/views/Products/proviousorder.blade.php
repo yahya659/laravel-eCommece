@@ -54,12 +54,12 @@
                             <div class="mb-3">
                                 <label  class="form-label">ملاحظات</label>
                                 <textarea name="note" id="note{{ $index }}" class="form-control"
-                                          cols="30" rows="5" placeholder="Say Something">{{ $item->note }}</textarea>
+                                cols="30" rows="5" placeholder="Say Something">{{ $item->note }}</textarea>
                             </div>
                             <div class="mb-3">
                                 <label  class="form-label">تاريخ الطلب</label>
                                 <textarea name="note" id="note{{ $index }}" class="form-control"
-                                          cols="30" rows="5" placeholder="Say Something">{{ $item->created_at }}</textarea>
+                                cols="30" rows="5" placeholder="Say Something">{{ $item->created_at }}</textarea>
                             </div>
                         </form>
 
