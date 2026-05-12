@@ -16,7 +16,7 @@
 ![صورة المشروع](assets/img/phot3.jpg)
 ![صورة المشروع](assets/img/phot4.jpg)
 ![صورة المشروع](assets/img/phot5.jpg)
-![صورة المشروع](assets/img/phot2.jpg)
+![صورة المشروع](/assets/img/phot2.jpg)
 ---
 
 ## 🚀 المميزات  
