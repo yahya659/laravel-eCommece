@@ -12,11 +12,11 @@
 ---
 
 ## 📸 لقطات من المشروع
-![صورة المشروع](/public/assets/img/a.jpg)
-![صورة المشروع](assets/img/phot3.jpg)
-![صورة المشروع](assets/img/phot4.jpg)
-![صورة المشروع](assets/img/phot5.jpg)
-![صورة المشروع](/assets/img/phot2.jpg)
+ 
+![صورة المشروع](/public/assets/img/phot3.jpg)
+![صورة المشروع](/public/assets/img/phot4.jpg)
+![صورة المشروع](/public/assets/img/phot5.jpg)
+![صورة المشروع](/public/assets/img/phot2.jpg)
 ---
 
 ## 🚀 المميزات  
