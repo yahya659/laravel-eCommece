@@ -12,7 +12,7 @@
 ---
 
 ## 📸 لقطات من المشروع
-![صورة المشروع](assets/img/phot1.jpg)
+![صورة المشروع](/public/assets/img/a.jpg)
 ![صورة المشروع](assets/img/phot3.jpg)
 ![صورة المشروع](assets/img/phot4.jpg)
 ![صورة المشروع](assets/img/phot5.jpg)
